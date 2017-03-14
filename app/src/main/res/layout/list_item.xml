@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_vertical_spacing"
+    android:paddingBottom="@dimen/list_vertical_spacing"
+    android:paddingLeft="@dimen/list_horizontal_spacing"
+    android:paddingRight="@dimen/list_horizontal_spacing">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="标题"
+        android:textSize="@dimen/item_title"
+        android:layout_alignParentLeft="true"/>
+    <com.juicle.app.widget.IconView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/angle_right"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/arrow_size"/>
+</RelativeLayout>

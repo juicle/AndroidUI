@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:id="@+id/basefragment"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/general_actionbar"
+        layout="@layout/actionbar_main" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/general_actionbar"
+        android:divider="@drawable/simplelist_divider"
+        android:dividerHeight="0.1dip"
+        android:id="@+id/listview">
+    </ListView>
+</RelativeLayout>

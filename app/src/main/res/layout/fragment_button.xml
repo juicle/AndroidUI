@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/space_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认按钮"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_20"
+        android:textSize="@dimen/text_size_16"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/blankButton"
+        android:text="Blank Button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/usualButton"
+        android:text="Usual Button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/successButton"
+        android:text="Success Button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/dangerButton"
+        android:text="Danger Button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/warningButton"
+        android:text="Warning Button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/roundButton"
+        android:text="Round Button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮组"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_20"
+        android:textSize="@dimen/text_size_16"/>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabButton"
+        android:layout_marginTop="@dimen/space_10">
+
+        <Button
+            android:id="@+id/tab1"
+            android:text="tab1"
+            style="@style/tabButtonFront"
+            app:layout_widthPercent="25%" />
+        <Button
+            android:id="@+id/tab2"
+            android:text="tab2"
+            android:layout_toRightOf="@+id/tab1"
+            android:layout_marginLeft="-2dp"
+            style="@style/tabButtonMiddle"
+            app:layout_widthPercent="25%" />
+        <Button
+            android:id="@+id/tab3"
+            android:text="tab3"
+            android:layout_toRightOf="@+id/tab2"
+            android:layout_marginLeft="-2dp"
+            style="@style/tabButtonMiddle"
+            app:layout_widthPercent="25%" />
+        <Button
+            android:id="@+id/tab4"
+            android:text="tab4"
+            android:layout_toRightOf="@+id/tab3"
+            android:layout_marginLeft="-2dp"
+            style="@style/tabButtonBack"
+            app:layout_widthPercent="25%" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮尺寸"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_20"
+        android:textSize="@dimen/text_size_16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_10"
+            style="@style/largeButton"
+            android:text="Lagre"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/middleButton"
+            android:layout_marginRight="@dimen/space_10"
+            android:text="Middle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/smallButton"
+            android:text="Small"/>
+    </LinearLayout>
+
+</LinearLayout>
